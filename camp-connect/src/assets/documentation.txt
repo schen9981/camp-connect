@@ -1,0 +1,2 @@
+This directory contains all the images, files, and other assets
+to be displayed on the site.

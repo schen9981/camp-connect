@@ -1,0 +1,12 @@
+This directory contains all components that can reused in other
+pages/parts of the website. For each component you decide to create,
+create a directory named the component, and create the .tsx and .css file
+inside it.
+
+For instance, if you want to create a Navbar component, create a directory
+called Navbar. Then, inside the directory, create a Navbar.tsx and
+Navbar.css file.
+
+Once you've done this, document this component here!
+
+#### Components ####

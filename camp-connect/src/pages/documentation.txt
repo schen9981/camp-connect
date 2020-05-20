@@ -1,0 +1,7 @@
+This directory contains all the different pages of our site. Each
+page will have its own directory, containing any sub-components that
+the page will have.
+
+Once you've done this, document this component here!
+
+#### Components ####

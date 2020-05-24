@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import PictureGrid from "./PictureGrid/PictureGrid";
 
 type AboutPageProps = {
 };
@@ -17,7 +18,10 @@ export default class About extends React.Component<AboutPageProps, AboutPageStat
   render () {
     return (
       <div className="About">
-
+        <div clasName="AboutDescription">
+          <p> blah </p>
+        </div>
+        <PictureGrid row={4} col={5}/>
       </div>
     )
   }

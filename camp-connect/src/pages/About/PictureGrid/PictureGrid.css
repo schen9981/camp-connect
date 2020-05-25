@@ -3,44 +3,66 @@
     font-size: 10pt
 }
 
-/* toggle visibility between these two */
-.bio {
-    font-family: 'Avenir Light';
-    font-size: 10pt
+.bioHide {
+    visibility: hidden;
 }
 
 .bioShow {
-    font-family: 'Avenir Light';
-    font-size: 10pt
+    display: inline-block;
+    cursor: pointer;
+    position: absolute; 
+    z-index: 1;
+    top: 0;
+    left: 150px;
+    background-color: grey;
+    color: black;
+    border-style: solid;
+    border-width: thin;
 }
 
+
 .pictureGrid {
-    border-style: solid;
+    /* border-style: solid; */
     max-width: 90%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 20%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
 .pictures {
+    min-width: 800px;
     border-style: dotted;
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    grid-row-gap: 3%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 2%;
     font-family: 'Avenir Light';
 }
 
 .smallGrid {
-    border-style: solid;
+    /* border-style: solid; */
+    min-width: 150px;
+    max-width: 150px; 
+    min-height: 150px;
+    max-height: 150px;
+    position: relative;
 }
 
-.smallGrid .p {
+
+
+.headshot{
+    width: 150px;
+    height: 150px;
+}
+
+.gridName{
     font-family: 'Avenir Light';
-    font-size: 10pt
-}
-
-.smallGrid .img{
-    width: 50;
-    height: 50;
+    font-size: 10pt;
+    text-align: center; 
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: gray;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
 }

@@ -2,31 +2,41 @@ import React from "react"
 import "./Inclusivity.css"
 
 import Donate from "./Donate"
+import { timingSafeEqual } from "crypto";
 
 type InclusivityPageProps = {
 
 };
 
 type InclusivityPageState = {
-
+    displayModal: string;
 };
 
 export default class Inclusivity extends React.Component<InclusivityPageProps, InclusivityPageState> {
     constructor(props: InclusivityPageProps) {
         super(props);
         this.state = {
-
+            displayModal: "none"
         };
+
+        this.clickHandler = this.clickHandler.bind(this);
     }
 
     clickHandler() {
-        console.log("I am  clicked");
+        if (this.state.displayModal === 'none') {
+            this.setState({displayModal: "block"});
+        }
+        if (this.state.displayModal === 'block') {
+            this.setState({displayModal: 'none'});
+        }
     }
+
+
 
     render() {
         return (
-            <div className="inclusivity">
-                <div className="info">
+            <div className="InclusivityContainer">
+                <div className="InclusivityInfo">
                     <h1>Inclusivity</h1>
                     <p>We are a group of college students working throughout this summer to startup this business.
                        We have our set price to compensate our staff who have been working daily on this project. We
@@ -37,19 +47,21 @@ export default class Inclusivity extends React.Component<InclusivityPageProps, I
                     <p>For families who are willing to donate to our organization, funds will go to subsidize other
                        students and provie materials. All contributions are appreciated, and we thank you.
                     </p>
-                    <button className="donateBtn" type="button" onClick={this.clickHandler}>Donate Here</button>
+                    <button className="DonateButton" type="button" onClick={this.clickHandler}>Donate Here</button>
                 </div>
-                <div className="emailList">
+                <div className="EmailList">
                     <p>Not sure yet? Join our email list to stay in the loop!</p>
-                    <div className="emailForm">
+                    <div className="EmailListForm">
                         <div>
-                            <input className="name" type="text" placeholder="Name" />
-                            <input className="email" type="text" placeholder="example@email.com" />
+                            <input type="text" placeholder="Name" />
+                            <input type="text" placeholder="example@email.com" />
                         </div>
-                        <button className="submit" type="button">Submit</button>
+                        <button className="EmailListSubmit" type="button">Submit</button>
                     </div>
                 </div>
-                <Donate />
+                <div style={{display: this.state.displayModal}} className="DonationModal">
+                    <Donate click={this.clickHandler}/>
+                </div>
             </div>
         )
     }

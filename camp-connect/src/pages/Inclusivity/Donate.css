@@ -1,145 +1,119 @@
-/* Mobile TODO */
-.donate {
+/* Mobile TODO1.*/
+.DonateContainer {
+    margin: 5% auto;
     font-family: "Avenir Black";
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
     border: 1px solid black;
+    background: white;
+    width: 90%;
 }
 
-.donate h1 {
+.DonateContainer h1 {
     color: #345d98;
 }
 
-.donate h2 {
+.DonateContainer h2 {
     color: #243f67;
     font-size: 1.7em;
 }
 
-.amount {
-    margin-top: -2em;
+.DonationHeader {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.amount input {
-    width: 290px;
-    margin-top: 0em;
+.DonationAmount {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+}
+.DonationHeader h1 {
+    margin-left: -2em;
+}
+
+.DonationExit {
+    align-self: center;
+    margin-left: 1em;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.DonationAmount h2 {
+    margin: 0;
+}
+
+.DonationAmount input {
     margin-left: 1em;
 }
 
-.amount h2 {
-    margin-bottom: 0.2em;
-}
-
-/*.donateInfo {
-    margin-top: -1em;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-}
-
-.billing {
-    margin-right: 2em;
-}
-
-.inputBox {
+.InputBox {
     font-family: "Avenir Light";
 }
 
-.inputBox p {
+.InputBox p {
     color: #243f67;
     margin: 0 0 0em 0.2em;
     font-size: 1em;
 }
 
-.inputBox input {
+.InputBox input {
     margin-bottom: 1em;
     border: 1px solid gray;
     font-size: 1em;
     padding: 0.4em;
-} */
+}
 
-/* .credit {
+.DonationBilling .InputBox input {
+    width: 100%;
+}
+
+.DonationCredit .InputBox input {
+    width: 100%;
+}
+
+.DonationRow {
+    display: flex;
+}
+
+.DonationCredit {
     display: flex;
     flex-direction: column;
 }
 
-.submitBtn  {
+.DonationSubmitButton  {
     font-family: "Avenir Black";
     background-color: #8491a5;
     color: white;
     font-size: 1.3em;
     border: none;
     padding: 0.4em 2em 0.4em 2em;
+    margin: 0.4em 0 1em;
     border-radius: 0.4em;
     align-self: center;
 }
 
-.billing {
-    display: flex;
-    flex-direction: column;
-}
-
-.credit {
-    display: flex;
-    flex-direction: column;
-}
-
-.info .inputBox input {
-    width: 100%;
-}
-
-.inputPair {
-    display: flex;
-}
-
-.inputPair .inputBox:nth-child(1) {
-    width: 150px;
-    margin-right: 2em;
-}
-
-.inputPair .inputBox:nth-child(2) {
-    width: 75px;
-}
-
-.credit .inputPair .inputBox:nth-child(1) {
-    width: 200px;
-}
-
-.billing .inputPair .inputBox:nth-child(1) {
-    width: 170px;
-} */
-
-
-/* Tablets and Desktop */
 @media all and (min-width: 776px) {
-    .donate  {
+    .DonateContainer {
         width: 600px;
     }
-    .amount {
-        flex-direction: row;
+    .DonationForm {
+        display: flex;
     }
-    .amount input {
-        margin-top: 2em;
+    .DonationBilling {
+        width: 250px;
+        margin-right: 1em;
     }
-
-    .amount h1 {
-        margin-bottom: 1em;
-    }
-
-    .donateInfo {
-        flex-direction: row;
-        margin-bottom: 0;
-    }
-
-    .credit .inputPair .inputBox:nth-child(1) {
-        width: 150px;
-    }
-
-    .billing .inputPair .inputBox:nth-child(1) {
-        width: 150px;
+    .DonationCredit {
+        width: 250px;
+        margin-left: 1em;
     }
 }

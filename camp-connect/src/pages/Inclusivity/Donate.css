@@ -47,6 +47,10 @@
     border: 1px solid black;
 }
 
+.DonationExit:hover {
+    background-color: #edf3fb;
+}
+
 .DonationAmount h2 {
     margin: 0;
 }

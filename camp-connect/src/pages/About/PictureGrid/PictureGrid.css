@@ -10,10 +10,37 @@
 }
 
 .bioShow {
-
+    font-family: 'Avenir Light';
+    font-size: 10pt
 }
 
-/* this is each grid itself */ 
-.person {
+.pictureGrid {
+    border-style: solid;
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
+.pictures {
+    border-style: dotted;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-row-gap: 3%;
+    font-family: 'Avenir Light';
+}
+
+.smallGrid {
+    border-style: solid;
+}
+
+.smallGrid .p {
+    font-family: 'Avenir Light';
+    font-size: 10pt
+}
+
+.smallGrid .img{
+    width: 50;
+    height: 50;
 }

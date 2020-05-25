@@ -1,26 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Switch, Route } from 'react-router';
+import About from './pages/About/About';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+type AppProps = {};
+
+type AppState = {};
+
+export default class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path={"/about"} component={About}></Route>
+          {/* <Route exact path={"/schedule"} component={Schedule}></Route> */}
+          {/* <Route exact path={"/inclusivity"} component={Inclusivity}></Route> */}
+          {/* <Route exact path={"/enroll"} component={Enrollment}></Route> */}
+        </Switch>
+        <Footer />
+      </div>
+    );
+  }
+
 }
-
-export default App;

@@ -1,0 +1,33 @@
+.rect {
+  background-color: black;
+  color: white;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 10px;
+  font-family: 'Avenir-Light';
+  font-size: 14px;
+}
+
+p {
+  text-align: left;
+}
+
+.nav .nav-link{
+  color: white!important;
+  padding: 0px 50px!important;
+}
+
+.navbar {
+  font-family: "Avenir-Light";
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+img {
+  width: 20px;
+  padding-right: 5px;
+}

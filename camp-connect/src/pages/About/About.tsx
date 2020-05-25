@@ -17,11 +17,18 @@ export default class About extends React.Component<AboutPageProps, AboutPageStat
 
   render () {
     return (
+      
       <div className="About">
-        <div clasName="AboutDescription">
-          <p> blah </p>
+        <div className="AboutDescription">
+          <div className="AboutTitle"> About Us </div> 
+          <div className="AboutText"> We are an energetic team of college students from some of the top universities across the country. 
+          We are ready to share our diverse range of interests and help build creative projects together this summer! </div>
         </div>
-        <PictureGrid row={4} col={5}/>
+
+        <div className="gridWrapper">
+          <PictureGrid rows={4} cols={5}/>
+        </div>
+
       </div>
     )
   }

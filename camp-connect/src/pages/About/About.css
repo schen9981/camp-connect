@@ -1,0 +1,21 @@
+.AboutTitle {
+    font-family: 'Avenir Black';
+    font-size: 30pt;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 20%;
+    padding-top: 5%
+}
+
+.AboutText {
+    font-family: 'Avenir Light';
+    font-size: 15pt;
+    text-align: left; 
+    padding-left: 8%;
+    padding-right: 20%;
+    padding-top: 5%
+}
+
+.gridWrapper {
+
+}

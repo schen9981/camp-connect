@@ -1,0 +1,19 @@
+.name {
+    font-family: 'Avenir Light';
+    font-size: 10pt
+}
+
+/* toggle visibility between these two */
+.bio {
+    font-family: 'Avenir Light';
+    font-size: 10pt
+}
+
+.bioShow {
+
+}
+
+/* this is each grid itself */ 
+.person {
+
+}

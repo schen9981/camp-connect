@@ -1,0 +1,20 @@
+{
+    "bio" : [
+        {
+            "name": "Alex Morishige",
+            "imagePath": "../../../assets/headshots/alex-morishige.png",
+            "bio": ""
+        },
+        {
+            "name": "Callie Teitelbaum",
+            "imagePath": "../../../assets/headshots/callie_teitelbaum.png",
+            "bio": ""
+        },
+        {
+            "name": "Gabby Asuncion",
+            "imagePath": "../../../assets/headshots/gabby_asuncion.png",
+            "bio": ""
+        }
+
+    ]
+}

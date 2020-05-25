@@ -6,6 +6,11 @@
     background-size: cover;
 }
 
+.InclusivityContainer button {
+    outline: none;
+    cursor: pointer;
+}
+
 .InclusivityInfo {
     margin: 0 5em 0 5em;
     display: flex;

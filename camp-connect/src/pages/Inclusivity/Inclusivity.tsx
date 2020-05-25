@@ -31,7 +31,9 @@ export default class Inclusivity extends React.Component<InclusivityPageProps, I
         }
     }
 
-
+    handleSubmit(event: any)  {
+        console.log("submit!");
+    }
 
     render() {
         return (
@@ -51,13 +53,14 @@ export default class Inclusivity extends React.Component<InclusivityPageProps, I
                 </div>
                 <div className="EmailList">
                     <p>Not sure yet? Join our email list to stay in the loop!</p>
-                    <div className="EmailListForm">
+                    <form className="EmailListForm" onSubmit={this.handleSubmit}>
                         <div>
                             <input type="text" placeholder="Name" />
                             <input type="text" placeholder="example@email.com" />
                         </div>
-                        <button className="EmailListSubmit" type="button">Submit</button>
-                    </div>
+                        {/* <input className="EmailListSubmit" type="submit" value="Submit" /> */}
+                        <button type="button" className="EmailListSubmit">Submit</button>
+                    </form>
                 </div>
                 <div style={{display: this.state.displayModal}} className="DonationModal">
                     <Donate click={this.clickHandler}/>

@@ -1,0 +1,111 @@
+.inclusivity {
+    font-family: "Avenir", sans-serif;
+    background-color: #edf3fb;
+    background-image: url(/assets/Inclusivity/Background.svg);
+    background-position-y: 50px;
+    background-size: cover;
+}
+
+.info {
+    margin: 0 5em 0 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-family: "Avenir Black";
+    font-size: 2.5em;
+    margin: 1em 0 0.2em 0;
+}
+
+.info p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.donateBtn {
+    font-family: "Avenir Black";
+    background-color: #13294a;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    padding: 0.4em 0em 0.4em 0em;
+    margin-top: 1em;
+    width: 170px;
+    border-radius: 0.4em;
+    /* align-self: center; */
+}
+
+.emailList {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailList p {
+    font-family: "Avenir Light";
+}
+
+
+.submit {
+    background-color: #4c617f;
+    border: none;
+    font-family: "Avenir Black";
+    font-size: 1.2em;
+    color: white;
+    border-radius: 0.4em;
+    margin: 1em 0 0 0;
+    
+    padding: 0.4em 1em 0.4em 1em;
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.emailList input {
+    padding: 1em 1em 1em 0.5em;
+    border: 1px solid lightgray;
+}
+
+/* Small devices, landscape phones */
+@media all and (min-width: 576px) {
+
+}
+
+/* Tablets */
+@media all and (min-width: 768px) {
+    .emailList {
+        margin-top: 6em;
+    }
+
+    .emailForm {
+        flex-direction: row;
+    }
+
+    .submit {
+        margin: 0 0 0 1em;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 992px) {
+    .info p {
+        width: 900px;
+    }
+
+    .emailList {
+        margin-top: 8em;
+    }
+}
+
+/* Large Desktop */
+@media all and (min-width: 1200px) {
+
+}

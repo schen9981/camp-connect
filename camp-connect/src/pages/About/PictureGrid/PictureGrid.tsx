@@ -1,6 +1,7 @@
 import React from "react";
 import "./PictureGrid.css";
-//import bio from "bio.json";
+
+
 import headshotAlex from "../../../assets/headshots/alex_morishige.png";
 import headshotCallie from "../../../assets/headshots/callie_teitelbaum.png";
 import headshotGabby from "../../../assets/headshots/gabby_asuncion.png";
@@ -58,38 +59,78 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
   }
 
   setCurrentDisplay(name : string) {
-    console.log("set current display");
-    console.log(name);
 
-    this.setState({
-      currentDisplay : name
-    });
+    if (this.state.currentDisplay === name) {
+      this.setState({
+        currentDisplay : null
+      });
+    }
+    else {
+      this.setState({
+        currentDisplay : name
+      });
+    }
 
-    console.log(this.state.currentDisplay);
   }
 
+  createGrid(){
+
+    this.state.people.map((person) => {
+      <div className="smallGrid" onClick={() => this.setCurrentDisplay(person.name)}>
+        <img className="headshot" src={person.imagePath} alt={person.name} />
+        <div className="gridName"> {person.name} </div>
+        <span className={this.state.currentDisplay === person.name ? "bioShow" : "bioHide"}>
+          <p>{person.name}</p>
+          <p>{person.bio}</p>
+        </span>
+      </div>
+    })
+
+    
+  }
+
+
+
   render () {
+
     return (
       <div className="pictureGrid">
         
         {/*  style={{gridTemplateColumns: this.props.cols, gridTemplateRows: this.props.rows}}   */}
 
-        <div className="pictures">
+         <div className="pictures">
+
+          {/* {this.createGrid()} */}
+
+
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Alex Morishige")}>
             <img className="headshot" src={headshotAlex}></img>
             <div className="gridName"> Alex Morishige </div>
+
             <span className={this.state.currentDisplay === "Alex Morishige" ? "bioShow" : "bioHide"}>
               <p> Alex Morishige </p>
-              <p> Alex's bio </p>
+              <p> I am a junior at Hamilton College studying Economics, Government, and mathematics. 
+                At school, I play for the Varsity Soccer team, write for the school newspaper, The Spectator, 
+                and play on an intramural basketball team. I am also fluent in Japanese and can speak conversational Spanish. 
+                Outside of school, I have done internships at marketing and financial firms, and I plan to go into finance. 
+                I’ve loved being a camp counselor in the past, and I’m excited to be part of Camp Connect! </p>
             </span>
+            
           </div>
+
+          
 
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Callie Teitelbaum")}>
             <img className="headshot" src={headshotCallie} ></img>
             <div className="gridName"> Callie Teitelbaum </div>
             <span className={this.state.currentDisplay === "Callie Teitelbaum" ? "bioShow" : "bioHide"}>
               <p> Callie Teitelbaum </p>
-              <p> Callie's bio </p>
+              <p> I am a junior at the University of Michigan studying history and philosophy. 
+              At Michigan, I work as a news staff reporter for the school newspaper, The Michigan Daily, 
+              and previously worked as a podcast content producer for The Daily Weekly. 
+              I serve on the executive board for Michigan’s premier pre-law and public policy co-ed fraternity, KOA, 
+              and weekly tutor a third grade student through Proyecto Avance: Latino Mentoring Association. 
+              I’m so excited to be on the team of Camp Connect, and can’t wait to work with you all this summer!</p>
             </span>
           </div>
 
@@ -127,9 +168,15 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             <div className="gridName"> Holly Zheng </div>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Jack Dermer")}>
             <img className="headshot" src={headshotJackD}></img>
             <div className="gridName"> Jack Dermer </div>
+            <span className={this.state.currentDisplay === "Jack Dermer" ? "bioShow" : "bioHide"}>
+              <p> Jack Dermer </p>
+              <p> Hi! I’m a junior at Brown majoring in Computer Science and Psychology. At school, 
+                I work as a teaching assistant for an introductory CS class as well as working in a child-psychology research lab. 
+                Outside of class, I enjoy cooking, pickup basketball, and theatrical lighting design.  </p>
+            </span>
           </div>
 
           <div className="smallGrid">
@@ -161,21 +208,8 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
 
           </div>
 
-
-          {/* {this.state.people.map((person) => {
-            console.log(person.imagePath); 
-            // onClick={() => this.setCurrentDisplay(person.name)}
-            
-            <div className="smallGrid" >
-              <img className="headshot" src={person.imagePath} alt={person.name} />
-              <div className="gridName"> {person.name} </div>
-              <span className={this.state.currentDisplay == person.name ? "bioShow" : "bio"}>
-                <p>{person.name}</p>
-                <p>{person.bio}</p>
-              </span>
-
-            </div>
-          })} */}
+          
+          
 
         </div>
       </div>

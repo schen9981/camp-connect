@@ -1,21 +1,33 @@
+.About{
+    padding-top: 5%;
+}
+
+
 .AboutTitle {
     font-family: 'Avenir Black';
     font-size: 30pt;
     text-align: left;
     padding-left: 8%;
-    padding-right: 20%;
+    padding-right: 30%;
     padding-top: 5%
 }
 
 .AboutText {
     font-family: 'Avenir Light';
-    font-size: 15pt;
+    font-size: 13pt;
     text-align: left; 
     padding-left: 8%;
     padding-right: 20%;
-    padding-top: 5%
+    padding-top: 5%;
 }
 
-.gridWrapper {
+/* .gridWrapper {
+    border-style: solid;
+} */
 
-}
+
+@media screen and (max-width: 480px) {
+    .AboutText {
+        min-width: 60%;
+    }
+} 

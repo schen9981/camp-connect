@@ -31,16 +31,16 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
     };
   }
 
-  setCurrentDisplay(name : string) {
+  setCurrentDisplay(name: string) {
     this.setState({
-      this.currentDisplay: name
+      currentDisplay: name
     });
   }
 
-  render () {
+  render() {
     return (
       <div className="PictureGrid">
-        <div className="pictures"
+        {/* <div className="pictures"
           style={{display: grid, gridTemplateColumns: {this.props.cols}, gridTemplateRows: {this.props.rows}}}
         >
         {this.state.people.map(person) => (
@@ -53,7 +53,7 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             </span>
           </div>
         )}
-        </div>
+        </div> */}
       </div>
     )
   }

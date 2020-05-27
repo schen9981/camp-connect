@@ -15,13 +15,13 @@ export default class About extends React.Component<AboutPageProps, AboutPageStat
     };
   }
 
-  render () {
+  render() {
     return (
       <div className="About">
-        <div clasName="AboutDescription">
+        {/* <div clasName="AboutDescription">
           <p> blah </p>
         </div>
-        <PictureGrid row={4} col={5}/>
+        <PictureGrid row={4} col={5} /> */}
       </div>
     )
   }

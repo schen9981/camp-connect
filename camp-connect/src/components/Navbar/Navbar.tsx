@@ -1,6 +1,7 @@
 import Nav from "react-bootstrap/Nav";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
 import React from 'react';
 import './Navbar.css';
 
@@ -25,7 +26,7 @@ export default class App extends React.Component<NavbarProps, NavbarState> {
               <Nav.Link href="/about">Our Team</Nav.Link>
               <Nav.Link href="/schedule">A Week @ Camp</Nav.Link>
               <Nav.Link href="/inclusivity">Inclusivity</Nav.Link>
-              <Nav.Link href="/enroll">Enrollment</Nav.Link>
+              <Button id="enroll-btn" href="/enroll">Enrollment</Button>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

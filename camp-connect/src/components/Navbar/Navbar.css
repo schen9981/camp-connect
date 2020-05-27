@@ -5,3 +5,8 @@
 .nav-links {
   text-align: right;
 }
+
+#enroll-btn{
+  background-color: #003D47;
+  border-color: black;
+}

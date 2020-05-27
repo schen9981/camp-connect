@@ -1,0 +1,14 @@
+.dark-blue-btn {
+  background-color: #003d47 !important;
+  border-color: black !important;
+  font-family: "Avenir Black";
+  max-width: 150px;
+}
+
+.lg-dark-blue-btn {
+  background-color: #003d47 !important;
+  border-color: black !important;
+  font-family: "Avenir Black";
+  width: 300px;
+  font-size: 25px !important;
+}

@@ -106,7 +106,6 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Alex Morishige")}>
             <img className="headshot" src={headshotAlex}></img>
             <div className="gridName"> Alex Morishige </div>
-
             <span className={this.state.currentDisplay === "Alex Morishige" ? "bioShow" : "bioHide"}>
               <p> Alex Morishige </p>
               <p> I am a junior at Hamilton College studying Economics, Government, and mathematics. 
@@ -114,11 +113,8 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
                 and play on an intramural basketball team. I am also fluent in Japanese and can speak conversational Spanish. 
                 Outside of school, I have done internships at marketing and financial firms, and I plan to go into finance. 
                 I’ve loved being a camp counselor in the past, and I’m excited to be part of Camp Connect! </p>
-            </span>
-            
+            </span>    
           </div>
-
-          
 
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Callie Teitelbaum")}>
             <img className="headshot" src={headshotCallie} ></img>
@@ -134,14 +130,29 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("David Bonilla")}>
             <img className="headshot" src={headshotDavidB}/>
             <div className="gridName"> David Bonilla</div>
+            <span className={this.state.currentDisplay === "David Bonilla" ? "bioShow" : "bioHide"}>
+              <p> David Bonilla </p>
+              <p> Hi! I’m David Bonilla, a rising junior at Brown University studying cognitive neuroscience on the pre-med track. 
+                I’m originally from Colombia so I am a native Spanish speaker, a skill that I use every day as a medical interpreter 
+                and volunteer manager at a free clinic in Providence. Outside of school I love playing the trombone, piano, and bass guitar. 
+                For the past few summers I’ve given elementary school band lessons to kids in my district who can’t afford traditional private tutors. 
+                I’m so excited to be a part of Camp Connect this year!</p>
+            </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("David Lepelstat")}>
             <img className="headshot" src={headshotDavidD}/>
             <div className="gridName"> David Lepelstat</div>
+            <span className={this.state.currentDisplay === "David Lepelstat" ? "bioShow" : "bioHide"}>
+              <p> David Lepelstat </p>
+              <p> Hello! I’m a junior at Wesleyan University where I major in American Government and Educational Studies. 
+                At college, I am in an improv group, I tutor at a local elementary school, and work for the Center of the Arts. 
+                When I’m not at school, I am a Mainstage Storyteller for The Moth podcast where I also work as a teaching intern. 
+                Some of my interests are playing guitar, acting, and playing basketball. </p>
+            </span>
           </div>
 
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Dylan Marin")}>
@@ -149,23 +160,53 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             <div className="gridName"> Dylan Marin</div>
             <span className={this.state.currentDisplay === "Dylan Marin" ? "bioShow" : "bioHide"}>
               <p> Dylan Marin </p>
-              <p> Dylan's bio </p>
+              <p> Hi! I'm a Sophomore at Northeastern University currently undeclared. I've been studying Architecture and Engineering, 
+                in addition to a few other disciplines. 
+                I have a background in theatrical lighting design, and outside of class, I like longboarding, photography, and soccer. </p>
             </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Eli Glass")}>
             <img className="headshot" src={headshotEli}/>
             <div className="gridName"> Eli Glass</div>
+            <span className={this.state.currentDisplay === "Eli Glass" ? "bioShow" : "bioHide"}>
+              <p> Eli Glass </p>
+              <p> 
+              I am a junior at Tufts University studying Biopsychology on a pre-med track. 
+              At school, I am a mentor in the Tufts DREAM Village Mentoring Program, and a student leader for FOCUS, 
+              a community service-based pre-orientation program for incoming freshmen. 
+              I’ve also worked in a neurobiology lab doing autism research. 
+              Some things I love are animals, playing soccer, and playing the piano. 
+              I’m so excited to be part of the Camp Connect team!
+              </p>
+            </span>
+
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Gabby Asuncion")}>
             <img className="headshot" src={headshotGabby}></img>
             <div className="gridName"> Gabby Asuncion </div>
+            <span className={this.state.currentDisplay === "Gabby Asuncion" ? "bioShow" : "bioHide"}>
+              <p> Gabby Asuncion </p>
+              <p> 
+              Hey I’m Gabby and I’m a senior at Brown studying Computer Science and Art Histor
+              Outside of school, I TA an introductory CS class, co-direct a dance company on campus, 
+              and handle communications for a new pre-professional fashion organization! 
+              Besides that, I love baking, playing the ukulele (badly), and drawing.
+              </p>
+            </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Holly Zheng")}>
             <img className="headshot" src={headshotHolly}></img>
             <div className="gridName"> Holly Zheng </div>
+            <span className={this.state.currentDisplay === "Holly Zheng" ? "bioShow" : "bioHide"}>
+              <p> Holly Zheng </p>
+              <p> 
+              My name is Holly, and I a junior at Brown University studying Computer Science and Linguistics. 
+              When I’m not thinking about human or computer languages, I like to play the clarinet and read mystery novels.
+              </p>
+            </span>
           </div>
 
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Jack Dermer")}>
@@ -179,9 +220,18 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Jack Malamud")}>
             <img className="headshot" src={headshotJackM}></img>
             <div className="gridName"> Jack Malamud </div>
+            <span className={this.state.currentDisplay === "Jack Malamud" ? "bioShow" : "bioHide"}>
+              <p> Jack Malamud </p>
+              <p> Hi! I am a junior at Brown University majoring in Latin and Political Science. 
+                At school, I serve as the president of Brown's chapter of Every Vote Counts, a non-partisan organization dedicated to 
+                increasing voter turnout and expanding voter access. I also write for the Brown Political Review and edit for the Brown Journal of World Affairs. 
+                Outside of school, I've worked for a couple of political campaigns; 
+                I also studied ballet for about ten years and I love to act whenever I have the chance. 
+                I'm thrilled to join the Camp Connect team and I can't wait to meet you all!  </p>
+            </span>
           </div>
 
           <div className="smallGrid">

@@ -58,7 +58,9 @@ export default class Enroll extends React.Component<
               consider donating to help us fund this project.
             </div>
             <div className="btn-container">
-              <Button className="dark-blue-btn">Learn more</Button>
+              <Button className="dark-blue-btn" href="/inclusivity">
+                Learn more
+              </Button>
             </div>
           </div>
         </div>

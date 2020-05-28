@@ -13,12 +13,15 @@
   }
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Avenir Black";
 }
 
-h2 {
-  font-family: "Avenir Black";
+p,
+div,
+body {
+  font-family: "Avenir Next";
 }
 
 .App-header {

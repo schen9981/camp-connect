@@ -12,3 +12,16 @@
   width: 300px;
   font-size: 25px !important;
 }
+
+@media only screen and (max-width: 1200px) {
+  .lg-dark-blue-btn {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .lg-dark-blue-btn {
+    width: 150px;
+    font-size: 20px !important;
+  }
+}

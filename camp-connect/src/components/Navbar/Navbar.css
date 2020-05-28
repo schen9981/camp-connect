@@ -5,3 +5,12 @@
 .nav-links {
   text-align: right;
 }
+
+@media only screen and (max-width: 991px) {
+  .nav-links {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./PictureGrid.css";
 
-
+import headshotAdam from "../../../assets/headshots/adam_garrity.jpg";
 import headshotAlex from "../../../assets/headshots/alex_morishige.png";
 import headshotCallie from "../../../assets/headshots/callie_teitelbaum.png";
 import headshotGabby from "../../../assets/headshots/gabby_asuncion.png";
@@ -12,10 +12,13 @@ import headshotEli from "../../../assets/headshots/eli_glass.png";
 import headshotHolly from "../../../assets/headshots/holly_zheng.png";
 import headshotJackD from "../../../assets/headshots/jack_dermer.png";
 import headshotJackM from "../../../assets/headshots/jack_malamud.jpg";
+import headshotJohn from "../../../assets/headshots/john_mattson.jpeg";
 import headshotLea from "../../../assets/headshots/lea_jacobson.png";
 import headshotMary from "../../../assets/headshots/mary_bibbey.jpg";
 import headshotOlivia from "../../../assets/headshots/olivia_mcclain.png";
+import headshotOliviaT from "../../../assets/headshots/olivia_testa.png";
 import headshotSophia from "../../../assets/headshots/sophia_chen.png";
+import headshotTzion from "../../../assets/headshots/tzion_jones.png";
 
 type Person = {
   name: string,
@@ -102,6 +105,18 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
 
           {/* {this.createGrid()} */}
 
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Adam Garrity")}>
+            <img className="headshot" src={headshotAdam}></img>
+            <div className="gridName"> Adam Garrity </div>
+            <span className={this.state.currentDisplay === "Adam Garrity" ? "bioShow" : "bioHide"}>
+              <p> Adam Garrity </p>
+              <p> I am a Junior at Syracuse University studying TRF (Television, Radio and Film) and Policy Studies. 
+                At Syracuse, I am the Art Director for the largest student theater group on campus, First Year Players. 
+                Additionally, I am a member of the professional film fraternity DKA and I work as an engagement specialist
+                for Syracuse Hillel. 
+                Outside of class I love playing soccer, listening to podcasts, and finding great places to eat! </p>
+            </span>    
+          </div>
 
           <div className="smallGrid" onClick={() => this.setCurrentDisplay("Alex Morishige")}>
             <img className="headshot" src={headshotAlex}></img>
@@ -234,30 +249,87 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("John Mattson")}>
+            <img className="headshot" src={headshotJohn}></img>
+            <div className="gridName"> John Mattson </div>
+            <span className={this.state.currentDisplay === "John Mattson" ? "bioShow" : "bioHide"}>
+              <p> John Mattson </p>
+              <p> I’m a junior at Tufts University studying Economics and Philosophy. 
+                At school, I am part of an organization that consults with non-profit organizations and socially-conscious start-ups. 
+                I also sit on a philanthropy council that gives grants to NGOs in the Boston area every semester. 
+                I’ve loved being a summer camp counselor in the past, and I’m excited to be on the Camp Connect team!  </p>
+            </span>
+          </div>
+
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Lea Jacobson")}>
             <img className="headshot" src={headshotLea}></img>
             <div className="gridName"> Lea Jacobson </div>
+            <span className={this.state.currentDisplay === "Lea Jacobson" ? "bioShow" : "bioHide"}>
+              <p> Lea Jacobson </p>
+              <p> Hi! I’m a junior at Tufts University studying Human Factors Engineering, which is an interdisciplinary area of study that combines engineering, 
+                psychology, computer science, and cognitive science. At school, I am involved in a volunteer tutoring program
+                called EVkids which pairs undergraduate students in the Boston area with inner-city youth from underserved communities.  
+                Some of my interests outside of school include making art, baking, doing yoga, and listening to music. 
+                I also spent 9 summers going to sleepaway camp and was a counselor for girls ages 7-9.</p>
+            </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Mary Bibbey")}>
             <img className="headshot" src={headshotMary}></img>
             <div className="gridName"> Mary Bibbey </div>
+            <span className={this.state.currentDisplay === "Mary Bibbey" ? "bioShow" : "bioHide"}>
+              <p> Mary Bibbey </p>
+              <p> Hello! I’m a junior at Brown concentrating in Behavioral Decision Sciences with a focus on Economics.  At school I am on the Cross Country and Track and Field team, and part of Brown Political Reviews Media board.  Outside of school you can find me in nature, doodling or making some art, or spending some quality time with friends.</p>
+            </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Olivia McClain")}>
             <img className="headshot" src={headshotOlivia}></img>
             <div className="gridName"> Olivia McClain </div>
+            <span className={this.state.currentDisplay === "Olivia McClain" ? "bioShow" : "bioHide"}>
+              <p> Olivia McClain </p>
+              <p> Hi! I’m a junior at Brown majoring in Environmental Science on the climate science track. 
+                When I’m not studying, I enjoy teaching science to third graders in Providence, leading outdoor trips around New England, 
+                and working as a Student Ambassador. 
+                To relax, I love running, photography, and playing games outside.</p>
+            </span>
           </div>
 
-          <div className="smallGrid">
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Olivia Testa")}>
+            <img className="headshot" src={headshotOliviaT}></img>
+            <div className="gridName"> Olivia Testa </div>
+            <span className={this.state.currentDisplay === "Olivia Testa" ? "bioShow" : "bioHide"}>
+              <p> Olivia Testa </p>
+              <p> Hi! I am a junior at Stanford University studying Product Design under the mechanical engineering department. 
+                At Stanford, I am the VP of Growth for BASES, Stanford’s largest entrepreneurship club, work in the theater department as a set designer, 
+                and tutor locally around the Bay Area. Outside of class, I have worked on the television shows Madam Secretary and Awkwafina is Nora From Queens 
+                as a set dresser. I am thrilled to join the Camp Connect team, and look forward to meeting you!</p>
+            </span>
+          </div>
+
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Sophia Chen")}>
             <img className="headshot" src={headshotSophia}></img>
             <div className="gridName"> Sophia Chen </div>
+            <span className={this.state.currentDisplay === "Sophia Chen" ? "bioShow" : "bioHide"}>
+              <p> Sophia Chen </p>
+              <p> Hey! I’m a senior at Brown University studying Computer Science and Applied Mathematics. 
+                At school, I’m a member of the development team of Hack@Brown and a teaching assistant for a software engineering course. 
+                In my free time, I love hiking, trying my hand at a new mochi recipe, and working on random web projects. 
+                I will be working on the web portal and frontend experience of Camp Connect, and I’m excited to be on the team!</p>
+            </span>
           </div>
 
-          <div className="zoomBar">
-
+          <div className="smallGrid" onClick={() => this.setCurrentDisplay("Tzion Jones")}>
+            <img className="headshot" src={headshotTzion}></img>
+            <div className="gridName"> Tzion Jones </div>
+            <span className={this.state.currentDisplay === "Tzion Jones" ? "bioShow" : "bioHide"}>
+              <p> Tzion Jones </p>
+              <p> Hello! I’m a junior at Brown majoring in Computer Science and International Relations. 
+                I’m a CS Teaching Assistant and diversity workshop coordinator on campus, and you can usually 
+                find me watching documentaries or taking nature photos. 
+                I like reading, writing, and telling jokes, and I can’t wait to get to know you all!</p>
+            </span>
           </div>
-
           
           
 

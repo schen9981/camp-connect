@@ -92,8 +92,6 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
     
   }
 
-
-
   render () {
 
     return (
@@ -331,8 +329,6 @@ export default class PictureGrid extends React.Component<PictureGridProps, Pictu
             </span>
           </div>
           
-          
-
         </div>
       </div>
     )

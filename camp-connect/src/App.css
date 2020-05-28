@@ -18,12 +18,6 @@ h2 {
   font-family: "Avenir Black";
 }
 
-p,
-div,
-body {
-  font-family: "Avenir Next";
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

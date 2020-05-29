@@ -10,7 +10,7 @@ type NavbarProps = {};
 
 type NavbarState = {};
 
-export default class App extends React.Component<NavbarProps, NavbarState> {
+export default class NavBar extends React.Component<NavbarProps, NavbarState> {
   constructor(props: NavbarProps) {
     super(props);
     this.state = {};
@@ -18,7 +18,7 @@ export default class App extends React.Component<NavbarProps, NavbarState> {
 
   render() {
     return (
-      <div>
+      <div className="NavBar">
         <Navbar className="navbar" expand="lg" bg="light">
           <Navbar.Brand href="/">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

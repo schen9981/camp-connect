@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -11,6 +12,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+p {
+  font-family: 'Avenir Light';
 }
 
 h1,

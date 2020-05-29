@@ -5,6 +5,15 @@
   max-width: 150px;
 }
 
+.dark-blue-btn-thin {
+  background-color: #003d47 !important;
+  border-color: black !important;
+  font-family: "Avenir Black";
+  max-width: 150px;
+  height: 30px;
+  font-size: 12px !important;
+}
+
 .lg-dark-blue-btn {
   background-color: #003d47 !important;
   border-color: black !important;

@@ -78,7 +78,6 @@ export default class PictureGrid extends React.Component<
   render() {
     return (
       <div className="pictures">
-
         <div
           className="smallGrid"
           onClick={() => this.setCurrentDisplay("Adam Garrity")}
@@ -98,10 +97,10 @@ export default class PictureGrid extends React.Component<
               I am a Junior at Syracuse University studying TRF (Television,
               Radio and Film) and Policy Studies. At Syracuse, I am the Art
               Director for the largest student theater group on campus, First
-              Year Players. Additionally, I am a member of the professional
-              film fraternity DKA and I work as an engagement specialist for
-              Syracuse Hillel. Outside of class I love playing soccer,
-              listening to podcasts, and finding great places to eat!{" "}
+              Year Players. Additionally, I am a member of the professional film
+              fraternity DKA and I work as an engagement specialist for Syracuse
+              Hillel. Outside of class I love playing soccer, listening to
+              podcasts, and finding great places to eat!{" "}
             </p>
           </span>
         </div>
@@ -122,15 +121,14 @@ export default class PictureGrid extends React.Component<
             <p className="staffName"> Alex Morishige </p>
             <p>
               {" "}
-              I am a junior at Hamilton College studying Economics,
-              Government, and mathematics. At school, I play for the Varsity
-              Soccer team, write for the school newspaper, The Spectator, and
-              play on an intramural basketball team. I am also fluent in
-              Japanese and can speak conversational Spanish. Outside of
-              school, I have done internships at marketing and financial
-              firms, and I plan to go into finance. I’ve loved being a camp
-              counselor in the past, and I’m excited to be part of Camp
-              Connect!{" "}
+              I am a junior at Hamilton College studying Economics, Government,
+              and mathematics. At school, I play for the Varsity Soccer team,
+              write for the school newspaper, The Spectator, and play on an
+              intramural basketball team. I am also fluent in Japanese and can
+              speak conversational Spanish. Outside of school, I have done
+              internships at marketing and financial firms, and I plan to go
+              into finance. I’ve loved being a camp counselor in the past, and
+              I’m excited to be part of Camp Connect!{" "}
             </p>
           </span>
         </div>
@@ -158,8 +156,8 @@ export default class PictureGrid extends React.Component<
               executive board for Michigan’s premier pre-law and public policy
               co-ed fraternity, KOA, and weekly tutor a third grade student
               through Proyecto Avance: Latino Mentoring Association. I’m so
-              excited to be on the team of Camp Connect, and can’t wait to
-              work with you all this summer!
+              excited to be on the team of Camp Connect, and can’t wait to work
+              with you all this summer!
             </p>
           </span>
         </div>
@@ -182,13 +180,13 @@ export default class PictureGrid extends React.Component<
               {" "}
               Hi! I’m David Bonilla, a rising junior at Brown University
               studying cognitive neuroscience on the pre-med track. I’m
-              originally from Colombia so I am a native Spanish speaker, a
-              skill that I use every day as a medical interpreter and
-              volunteer manager at a free clinic in Providence. Outside of
-              school I love playing the trombone, piano, and bass guitar. For
-              the past few summers I’ve given elementary school band lessons
-              to kids in my district who can’t afford traditional private
-              tutors. I’m so excited to be a part of Camp Connect this year!
+              originally from Colombia so I am a native Spanish speaker, a skill
+              that I use every day as a medical interpreter and volunteer
+              manager at a free clinic in Providence. Outside of school I love
+              playing the trombone, piano, and bass guitar. For the past few
+              summers I’ve given elementary school band lessons to kids in my
+              district who can’t afford traditional private tutors. I’m so
+              excited to be a part of Camp Connect this year!
             </p>
           </span>
         </div>
@@ -213,9 +211,9 @@ export default class PictureGrid extends React.Component<
               American Government and Educational Studies. At college, I am in
               an improv group, I tutor at a local elementary school, and work
               for the Center of the Arts. When I’m not at school, I am a
-              Mainstage Storyteller for The Moth podcast where I also work as
-              a teaching intern. Some of my interests are playing guitar,
-              acting, and playing basketball.{" "}
+              Mainstage Storyteller for The Moth podcast where I also work as a
+              teaching intern. Some of my interests are playing guitar, acting,
+              and playing basketball.{" "}
             </p>
           </span>
         </div>
@@ -253,21 +251,18 @@ export default class PictureGrid extends React.Component<
           <div className="gridName"> Eli Glass</div>
           <span
             className={
-              this.state.currentDisplay === "Eli Glass"
-                ? "bioShow"
-                : "bioHide"
+              this.state.currentDisplay === "Eli Glass" ? "bioShow" : "bioHide"
             }
           >
             <p className="staffName"> Eli Glass </p>
             <p>
               I am a junior at Tufts University studying Biopsychology on a
-              pre-med track. At school, I am a mentor in the Tufts DREAM
-              Village Mentoring Program, and a student leader for FOCUS, a
-              community service-based pre-orientation program for incoming
-              freshmen. I’ve also worked in a neurobiology lab doing autism
-              research. Some things I love are animals, playing soccer, and
-              playing the piano. I’m so excited to be part of the Camp Connect
-              team!
+              pre-med track. At school, I am a mentor in the Tufts DREAM Village
+              Mentoring Program, and a student leader for FOCUS, a community
+              service-based pre-orientation program for incoming freshmen. I’ve
+              also worked in a neurobiology lab doing autism research. Some
+              things I love are animals, playing soccer, and playing the piano.
+              I’m so excited to be part of the Camp Connect team!
             </p>
           </span>
         </div>
@@ -287,14 +282,13 @@ export default class PictureGrid extends React.Component<
           >
             <p className="staffName"> Gabby Asuncion </p>
             <p>
-              Hey I’m Gabby and I’m a senior at Brown studying Computer
-              Science and Art Histor Outside of school, I TA an introductory
-              CS class, co-direct a dance company on campus, and handle
-              communications for a new pre-professional fashion organization!
-              Besides that, I love baking, playing the ukulele (badly), and
-              drawing. I'm working on the website and course dashboard for
-              Camp Connect this summer and I can't wait for you to see what
-              we've been working on!
+              Hey I’m Gabby and I’m a senior at Brown studying Computer Science
+              and Art History. Outside of school, I TA an introductory CS class,
+              co-direct a dance company on campus, and handle communications for
+              a new pre-professional fashion organization! Besides that, I love
+              baking, playing the ukulele (badly), and drawing. I'm working on
+              the website and course dashboard for Camp Connect this summer and
+              I can't wait for you to see what we've been working on!
             </p>
           </span>
         </div>
@@ -316,8 +310,8 @@ export default class PictureGrid extends React.Component<
             <p>
               My name is Holly, and I a junior at Brown University studying
               Computer Science and Linguistics. When I’m not thinking about
-              human or computer languages, I like to play the clarinet and
-              read mystery novels.
+              human or computer languages, I like to play the clarinet and read
+              mystery novels.
             </p>
           </span>
         </div>
@@ -364,15 +358,14 @@ export default class PictureGrid extends React.Component<
             <p>
               {" "}
               Hi! I am a junior at Brown University majoring in Latin and
-              Political Science. At school, I serve as the president of
-              Brown's chapter of Every Vote Counts, a non-partisan
-              organization dedicated to increasing voter turnout and expanding
-              voter access. I also write for the Brown Political Review and
-              edit for the Brown Journal of World Affairs. Outside of school,
-              I've worked for a couple of political campaigns; I also studied
-              ballet for about ten years and I love to act whenever I have the
-              chance. I'm thrilled to join the Camp Connect team and I can't
-              wait to meet you all!{" "}
+              Political Science. At school, I serve as the president of Brown's
+              chapter of Every Vote Counts, a non-partisan organization
+              dedicated to increasing voter turnout and expanding voter access.
+              I also write for the Brown Political Review and edit for the Brown
+              Journal of World Affairs. Outside of school, I've worked for a
+              couple of political campaigns; I also studied ballet for about ten
+              years and I love to act whenever I have the chance. I'm thrilled
+              to join the Camp Connect team and I can't wait to meet you all!{" "}
             </p>
           </span>
         </div>
@@ -394,12 +387,12 @@ export default class PictureGrid extends React.Component<
             <p>
               {" "}
               I’m a junior at Tufts University studying Economics and
-              Philosophy. At school, I am part of an organization that
-              consults with non-profit organizations and socially-conscious
-              start-ups. I also sit on a philanthropy council that gives
-              grants to NGOs in the Boston area every semester. I’ve loved
-              being a summer camp counselor in the past, and I’m excited to be
-              on the Camp Connect team!{" "}
+              Philosophy. At school, I am part of an organization that consults
+              with non-profit organizations and socially-conscious start-ups. I
+              also sit on a philanthropy council that gives grants to NGOs in
+              the Boston area every semester. I’ve loved being a summer camp
+              counselor in the past, and I’m excited to be on the Camp Connect
+              team!{" "}
             </p>
           </span>
         </div>
@@ -422,14 +415,13 @@ export default class PictureGrid extends React.Component<
               {" "}
               Hi! I’m a junior at Tufts University studying Human Factors
               Engineering, which is an interdisciplinary area of study that
-              combines engineering, psychology, computer science, and
-              cognitive science. At school, I am involved in a volunteer
-              tutoring program called EVkids which pairs undergraduate
-              students in the Boston area with inner-city youth from
-              underserved communities. Some of my interests outside of school
-              include making art, baking, doing yoga, and listening to music.
-              I also spent 9 summers going to sleepaway camp and was a
-              counselor for girls ages 7-9.
+              combines engineering, psychology, computer science, and cognitive
+              science. At school, I am involved in a volunteer tutoring program
+              called EVkids which pairs undergraduate students in the Boston
+              area with inner-city youth from underserved communities. Some of
+              my interests outside of school include making art, baking, doing
+              yoga, and listening to music. I also spent 9 summers going to
+              sleepaway camp and was a counselor for girls ages 7-9.
             </p>
           </span>
         </div>
@@ -450,12 +442,12 @@ export default class PictureGrid extends React.Component<
             <p className="staffName"> Mary Bibbey </p>
             <p>
               {" "}
-              Hello! I’m a junior at Brown concentrating in Behavioral
-              Decision Sciences with a focus on Economics. At school I am on
-              the Cross Country and Track and Field team, and part of Brown
-              Political Reviews Media board. Outside of school you can find me
-              in nature, doodling or making some art, or spending some quality
-              time with friends.
+              Hello! I’m a junior at Brown concentrating in Behavioral Decision
+              Sciences with a focus on Economics. At school I am on the Cross
+              Country and Track and Field team, and part of Brown Political
+              Reviews Media board. Outside of school you can find me in nature,
+              doodling or making some art, or spending some quality time with
+              friends.
             </p>
           </span>
         </div>
@@ -476,12 +468,11 @@ export default class PictureGrid extends React.Component<
             <p className="staffName"> Olivia McClain </p>
             <p>
               {" "}
-              Hi! I’m a junior at Brown majoring in Environmental Science on
-              the climate science track. When I’m not studying, I enjoy
-              teaching science to third graders in Providence, leading outdoor
-              trips around New England, and working as a Student Ambassador.
-              To relax, I love running, photography, and playing games
-              outside.
+              Hi! I’m a junior at Brown majoring in Environmental Science on the
+              climate science track. When I’m not studying, I enjoy teaching
+              science to third graders in Providence, leading outdoor trips
+              around New England, and working as a Student Ambassador. To relax,
+              I love running, photography, and playing games outside.
             </p>
           </span>
         </div>
@@ -503,13 +494,13 @@ export default class PictureGrid extends React.Component<
             <p>
               {" "}
               Hi! I am a junior at Stanford University studying Product Design
-              under the mechanical engineering department. At Stanford, I am
-              the VP of Growth for BASES, Stanford’s largest entrepreneurship
-              club, work in the theater department as a set designer, and
-              tutor locally around the Bay Area. Outside of class, I have
-              worked on the television shows Madam Secretary and Awkwafina is
-              Nora From Queens as a set dresser. I am thrilled to join the
-              Camp Connect team, and look forward to meeting you!
+              under the mechanical engineering department. At Stanford, I am the
+              VP of Growth for BASES, Stanford’s largest entrepreneurship club,
+              work in the theater department as a set designer, and tutor
+              locally around the Bay Area. Outside of class, I have worked on
+              the television shows Madam Secretary and Awkwafina is Nora From
+              Queens as a set dresser. I am thrilled to join the Camp Connect
+              team, and look forward to meeting you!
             </p>
           </span>
         </div>
@@ -558,11 +549,11 @@ export default class PictureGrid extends React.Component<
             <p>
               {" "}
               Hello! I’m a junior at Brown majoring in Computer Science and
-              International Relations. I’m a CS Teaching Assistant and
-              diversity workshop coordinator on campus, and you can usually
-              find me watching documentaries or taking nature photos. I like
-              reading, writing, and telling jokes, and I can’t wait to get to
-              know you all!
+              International Relations. I’m a CS Teaching Assistant and diversity
+              workshop coordinator on campus, and you can usually find me
+              watching documentaries or taking nature photos. I like reading,
+              writing, and telling jokes, and I can’t wait to get to know you
+              all!
             </p>
           </span>
         </div>

@@ -1,0 +1,99 @@
+.name {
+    font-family: 'Avenir Light';
+    font-size: 10pt
+}
+
+.bioHide {
+    visibility: hidden;
+}
+
+.bioShow {
+    cursor: pointer;
+    position: absolute; 
+    z-index: 1;
+    min-width: 350px;
+    top: 0;
+    left: 150px;
+    background-color: #e8e5d5;
+    color: black;
+    border-style: solid;
+    border-width: thin;
+    font-family: 'Avenir Light';
+    font-size: 11pt;
+}
+
+
+.pictureGrid {
+    /* border-style: solid; */
+    max-width: 90%;
+    
+    padding-left: 10%;
+    padding-right: 25%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.pictures {
+    min-width: 800px;
+    /* border-style: dotted; */
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto;
+    grid-row-gap: 2%;
+    font-family: 'Avenir Light';
+}
+
+
+.smallGrid {
+    /* border-style: solid; */
+    min-width: 150px;
+    max-width: 150px; 
+    min-height: 150px;
+    max-height: 150px;
+    position: relative;
+}
+
+
+
+.headshot{
+    width: 150px;
+    height: 150px;
+}
+
+.gridName{
+    font-family: 'Avenir Light';
+    font-size: 10pt;
+    text-align: center; 
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #e8e5d5;
+    opacity: 80%;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .pictures {
+        grid-template-columns: auto auto auto auto;
+    }
+
+} 
+
+@media screen and (max-width: 480px) {
+    .pictures {
+        grid-template-columns: auto auto auto;
+    }
+
+    .smallGrid {
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .headshot{
+        width: 200px;
+        height: 200px;
+    }
+
+} 

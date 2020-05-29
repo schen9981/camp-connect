@@ -92,7 +92,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Adam Garrity </p>
+            <p className="staffName"> Adam Garrity </p>
             <p>
               {" "}
               I am a Junior at Syracuse University studying TRF (Television,
@@ -119,7 +119,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Alex Morishige </p>
+            <p className="staffName"> Alex Morishige </p>
             <p>
               {" "}
               I am a junior at Hamilton College studying Economics,
@@ -148,7 +148,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Callie Teitelbaum </p>
+            <p className="staffName"> Callie Teitelbaum </p>
             <p>
               {" "}
               I am a junior at the University of Michigan studying history and
@@ -177,7 +177,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> David Bonilla </p>
+            <p className="staffName"> David Bonilla </p>
             <p>
               {" "}
               Hi! I’m David Bonilla, a rising junior at Brown University
@@ -206,7 +206,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> David Lepelstat </p>
+            <p className="staffName"> David Lepelstat </p>
             <p>
               {" "}
               Hello! I’m a junior at Wesleyan University where I major in
@@ -233,7 +233,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Dylan Marin </p>
+            <p className="staffName"> Dylan Marin </p>
             <p>
               {" "}
               Hi! I'm a Sophomore at Northeastern University currently
@@ -258,7 +258,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Eli Glass </p>
+            <p className="staffName"> Eli Glass </p>
             <p>
               I am a junior at Tufts University studying Biopsychology on a
               pre-med track. At school, I am a mentor in the Tufts DREAM
@@ -285,7 +285,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Gabby Asuncion </p>
+            <p className="staffName"> Gabby Asuncion </p>
             <p>
               Hey I’m Gabby and I’m a senior at Brown studying Computer
               Science and Art Histor Outside of school, I TA an introductory
@@ -312,7 +312,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Holly Zheng </p>
+            <p className="staffName"> Holly Zheng </p>
             <p>
               My name is Holly, and I a junior at Brown University studying
               Computer Science and Linguistics. When I’m not thinking about
@@ -335,7 +335,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Jack Dermer </p>
+            <p className="staffName"> Jack Dermer </p>
             <p>
               {" "}
               Hi! I’m a junior at Brown majoring in Computer Science and
@@ -360,7 +360,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Jack Malamud </p>
+            <p className="staffName"> Jack Malamud </p>
             <p>
               {" "}
               Hi! I am a junior at Brown University majoring in Latin and
@@ -390,7 +390,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> John Mattson </p>
+            <p className="staffName"> John Mattson </p>
             <p>
               {" "}
               I’m a junior at Tufts University studying Economics and
@@ -417,7 +417,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Lea Jacobson </p>
+            <p className="staffName"> Lea Jacobson </p>
             <p>
               {" "}
               Hi! I’m a junior at Tufts University studying Human Factors
@@ -447,7 +447,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Mary Bibbey </p>
+            <p className="staffName"> Mary Bibbey </p>
             <p>
               {" "}
               Hello! I’m a junior at Brown concentrating in Behavioral
@@ -473,7 +473,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Olivia McClain </p>
+            <p className="staffName"> Olivia McClain </p>
             <p>
               {" "}
               Hi! I’m a junior at Brown majoring in Environmental Science on
@@ -499,7 +499,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Olivia Testa </p>
+            <p className="staffName"> Olivia Testa </p>
             <p>
               {" "}
               Hi! I am a junior at Stanford University studying Product Design
@@ -527,7 +527,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Sophia Chen </p>
+            <p className="staffName"> Sophia Chen </p>
             <p>
               {" "}
               Hey! I’m a senior at Brown University studying Computer Science
@@ -554,7 +554,7 @@ export default class PictureGrid extends React.Component<
                 : "bioHide"
             }
           >
-            <p> Tzion Jones </p>
+            <p className="staffName"> Tzion Jones </p>
             <p>
               {" "}
               Hello! I’m a junior at Brown majoring in Computer Science and

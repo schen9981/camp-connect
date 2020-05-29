@@ -8,10 +8,11 @@
 }
 
 .bioShow {
+    padding: 8px;
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    min-width: 350px;
+    min-width: 250px;
     top: 0;
     left: 200px;
     background-color: #e8e5d5;
@@ -20,6 +21,10 @@
     border-width: thin;
     font-family: 'Avenir Light';
     font-size: 11pt;
+}
+
+.staffName {
+  font-weight:bold;
 }
 
 .pictures {

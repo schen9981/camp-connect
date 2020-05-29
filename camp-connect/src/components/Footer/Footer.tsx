@@ -24,7 +24,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
             Camp Connect <br />
             New York, NY
           </p>
-          <p>2020 Camp Connect</p>
+          <p>  &#64;  2020 Camp Connect</p>
         </div>
 
         <Navbar className="navbar-dark" expand="lg">
@@ -38,7 +38,7 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
               <Nav.Link href="/schedule">A Week @ Camp</Nav.Link>
               <Nav.Link href="/ig">
                 <img src={ig} />
-                @campconnect
+                campconnect
               </Nav.Link>
               <Nav.Link href="/email">
                 <img src={mail} />

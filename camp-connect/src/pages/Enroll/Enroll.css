@@ -1,14 +1,10 @@
-h1 {
-  font-family: "Avenir Black";
-}
-
-body {
-  background-image: url("../../assets/Background.svg");
-}
-
 .spacer {
   height: 50px;
   border-bottom: 4px solid rgba(207, 37, 30, 0.3);
+}
+
+.JoinEmailList {
+  margin-top: 5%;
 }
 
 .header {

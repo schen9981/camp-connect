@@ -23,6 +23,10 @@ h2 {
   font-family: "Avenir Black";
 }
 
+body {
+  background-image: url("./assets/Background.svg");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

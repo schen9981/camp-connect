@@ -1,6 +1,7 @@
 import React from "react";
 import "./Enroll.css";
 import DetailsGrid from "./DetailsGrid";
+import JoinEmailList from "../../components/JoinEmailList/JoinEmailList";
 
 type EnrollPageProps = {};
 
@@ -23,6 +24,7 @@ export default class Enroll extends React.Component<
           <h1>Camp Begins June 29th!</h1>
         </div>
         <DetailsGrid />
+        <JoinEmailList />
       </div>
     );
   }

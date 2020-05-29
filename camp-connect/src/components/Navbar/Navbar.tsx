@@ -30,7 +30,7 @@ export default class NavBar extends React.Component<NavbarProps, NavbarState> {
               <Nav.Link href="/about">Our Team</Nav.Link>
               <Nav.Link href="/schedule">A Week @ Camp</Nav.Link>
               <Nav.Link href="/inclusivity">Inclusivity</Nav.Link>
-              <Button className="dark-blue-btn" href="/enroll">
+              <Button className="enrollButton dark-blue-btn" href="/enroll">
                 Enrollment
               </Button>
             </Nav>

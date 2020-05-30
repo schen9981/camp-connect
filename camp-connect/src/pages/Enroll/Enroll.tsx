@@ -10,7 +10,7 @@ type EnrollPageState = {};
 export default class Enroll extends React.Component<
   EnrollPageProps,
   EnrollPageState
-> {
+  > {
   constructor(props: EnrollPageProps) {
     super(props);
     this.state = {};
@@ -21,7 +21,7 @@ export default class Enroll extends React.Component<
       <div>
         <div className="spacer"></div>
         <div className="header">
-          <h1>Camp Begins June 29th!</h1>
+          <h1 style={{ textAlign: "center" }}>Camp Begins June 29th!</h1>
         </div>
         <DetailsGrid />
         <JoinEmailList />

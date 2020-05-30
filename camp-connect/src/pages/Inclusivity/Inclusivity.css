@@ -11,6 +11,10 @@
     cursor: pointer;
 }
 
+h1 {
+    text-align: left;
+}
+
 .InclusivityInfo {
     margin: 0 5em 0 5em;
     display: flex;

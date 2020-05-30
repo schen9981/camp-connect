@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router";
 import About from "./pages/About/About";
 import Enroll from "./pages/Enroll/Enroll";
+import Inclusivity from "./pages/Inclusivity/Inclusivity";
 
 type AppProps = {};
 
@@ -25,7 +26,7 @@ export default class App extends React.Component<AppProps, AppState> {
         <Switch>
           <Route exact path={"/about"} component={About}></Route>
           {/* <Route exact path={"/schedule"} component={Schedule}></Route> */}
-          {/* <Route exact path={"/inclusivity"} component={Inclusivity}></Route> */}
+          <Route exact path={"/inclusivity"} component={Inclusivity}></Route>
           <Route exact path={"/enroll"} component={Enroll}></Route>
         </Switch>
         <Footer />
